@@ -204,12 +204,13 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 - d1.valeur est devenue un nombre entier aléatoire entre 1 et 6
 - d2.valeur est devenue un nombre entier aléatoire entre 1 et 6
+- d3.valeur est devenue un nombre entier aléatoire entre 1 et 6
 - j.nbLancers a été incrémenté sur une base de correspondance avec nom
-- j.nbLancersGagnés a été incrémenté si la totale de d1.valeur et d2.valeur est égale à 7
+- j.nbLancersGagnés a été incrémenté si la totale de d1.valeur, d2.valeur, d3.valeur est plus petite ou égale à 10
 
 **RDCU**
 
-![Diagramme de séquence, jouer](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/rdcu-jouer.puml)
+![Diagramme de séquence, jouer](https://www.plantuml.com/plantuml/svg/bP7DIiD058NtUOf3LueAfjs5jXGQ4GL5_5kvcIQtDJ6vCzovAVfUle4l9fDggANMkfZDd7E-SoQPU3MYJLr5_gLWPyJKyFfM4RnAaMqeESrDK-dSihAf2OyakM4JQQ4LuJQTFi3PHb3QXYHoHhJ82cTOqKikgKaf9T-3ySX-Yi7VY4-U-CguuPrAmOlZo_PotFhB-cSWZvEKMYMFDvH-f_Gtb46d3B3HdwpALbtHoJX3idh40TlwC6Ah12aMpue4dYhBc5fM-NYlg94eEncNTKXWXEoP99nVW_TYsC-jr2IuI44CEoj9VQ3aCHBCn7XFSh0rVVRgIBJpBcECi3JjYjtk_Z_8mRlixqiUh9E1FTpBGSV-oryYGS7PzUmc_2_oExTRf-6B78NnHw5bE49y6W5RGETcmTJoWD-9n3ciwvOuZC3VXB-7BzRjNuKxKXFYlAchJm00 "rdcu-jouer")
 
 #### Opération: `terminerJeu(nom:String)`
 
@@ -223,4 +224,6 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 #### Diagramme de classes logicielles
 Le diagramme de classes suivant illustre la structure logicielle du projet.
+
+![Diagramme de classes logicielles](https://www.plantuml.com/plantuml/svg/pLHDRnf13BtpAwoSY828LEbbWr1GIQgYbYRa1qHcnqLJxSvix1aAGldlrNvDTW5HjPToMUqyUvuzVhRln24xdoQTE44Hc1BiEW00WvSr9kGv0kFJ9N41zfQC8iJTomZMLgiIt7Dyw-1I76FieEHKz0Dzue0sZemIk6UsN8NfxMhdDuYjeWPBUVcBMMEYrICofkI8oyirrQIwtA8iUMw6mq0oivuyXvSPcqOWZhLPrSZoAvgOM5hFRU2VSMMeRUqTqA08QgDvRjDkmtZPykebHoBLuB4mfQbTybNkjuSvEtl-Fi-n7JIYty9Um02qWzt2MwZNtBe7wutwYsBVXCkJX0dLzdwZnSc_oKL-IbEI8DZFGZ-9u1jce_9P_KhKSUMYhYEOKdtu40uzHIao4y_8dn0bZy0dx8uurUPFB8tnQ2eOqc_wCZKpgvLib61XlQFtfkNY6449Ls1iZMERZz-CV1GALnVsXF48NQjKJAyHBEZLaxXHCNqorR7JrY1l-u2c_ZnvukrpyR2hHsGXzIHzM51iMGMjq6p7upvmtcuBaimQeL5n_RYZeOsBO4uRz-1D4RNLwgLQvvpYu8No7lza5NqS3hl58Igp-PzfjnT6ewVFMkxsg9nrgjfeTp3CaoohbnrjCYQHIPP5KFrVJR8iqJ7cN6Nlf5gfX7uXKsl33ugPbGPzM9I3mHWkhY-gdNY8Jwdplb62SxqGxiWedoQ_0G00 "App")
 

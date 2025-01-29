@@ -17,4 +17,5 @@ class JeuDeDés
 Joueur "*" -down- "1" JeuDeDés : joue >
 Joueur "1" -right- "2" Dé : lance >
 JeuDeDés "1" -up- "2" Dé : inclut >
+JeuDeDés "1" -up- "3" Dé : inclut >
 @enduml

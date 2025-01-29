@@ -29,7 +29,7 @@ describe('GET /api/v1/jeu/redemarrerJeu', () => {
 
     const joueursJSON = jeuRoutes.controleurJeu.joueurs;
     const joueursArray = JSON.parse(joueursJSON);
-    const response = await request.get('/api/v1/jeu/getJoueurs');
+    const response = await request.get('/api/v1/jeu/jouer/');
 
     expect(response.status).toBe(404); 
     expect(joueursArray.length).toBe(0);

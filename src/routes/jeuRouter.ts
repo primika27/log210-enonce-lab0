@@ -61,9 +61,9 @@ export class JeuRouter {
       const resultat = this._controleurJeu.jouer(nom);
       const resultatObj = JSON.parse(resultat);
       // flash un message selon le résultat
-      const key = resultatObj.somme == 7 ? 'win' : 'info';
+      const key = resultatObj.somme >=10 ? 'win' : 'info';
       req.flash(key,
-        `Résultat pour ${nom}: ${resultatObj.v1} + ${resultatObj.v2} = ${resultatObj.somme}`);
+        `Résultat pour ${nom}: ${resultatObj.v1} + ${resultatObj.v2} +${resultatObj.v3}= ${resultatObj.somme}`);
       res.status(200)
         .send({
           message: 'Success',
@@ -106,7 +106,7 @@ export class JeuRouter {
     }
   }
 
-  redemarrerJeu(req: Request, res: Response, next: NextFunction){
+  redemarrerJeu(req: Request, res: Response, next: NextFunction) {
     const nom = req.body.nom;
     try {
       // Invoquer l'opération système (du DSS) dans le contrôleur GRASP
