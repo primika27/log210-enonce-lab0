@@ -13,3 +13,4 @@ note right : selon Créateur\n(JeuDeDes //agrège// Joueur)
 c -> jm : add(j)
 note right : selon Expert
 @enduml
+

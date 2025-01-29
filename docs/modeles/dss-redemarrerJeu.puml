@@ -1,1 +1,17 @@
 // Vous devez compléter ce fichier
+
+@startuml Diagramme de cas d'utilisation
+
+skinparam style strictuml
+skinparam defaultfontname Verdana
+skinparam sequence {
+    MessageAlign center
+}
+
+title DSS pour un scénario redemarrer
+actor ":Joueur" as c
+participant ":Système" as s
+c->s : redémarrerJeu()
+
+@enduml
+

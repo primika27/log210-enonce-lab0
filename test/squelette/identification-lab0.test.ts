@@ -9,19 +9,19 @@ beforeAll(async () => {
 });
 
 describe('README identification', () => {
-  it('devrait trouver votre nom', () => {
+  it('Primika Khayargoli', () => {
     expect(content.includes("Entrer votre nom")).toBeFalsy();
   });
 
-  it('devrait trouver votre courriel', () => {
+  it('primika.khayargoli.1@ens.etsmlt.ca', () => {
     expect(content.includes("Entrer votre courriel")).toBeFalsy();
   });
 
-  it('devrait trouver Votre code moodle', () => {
+  it('KHAP89290201', () => {
     expect(content.includes("Entrer votre code moodle obtenu à partir de Signets")).toBeFalsy();
   });
 
-  it("devrait trouver votre compte github", () => {
+  it("primika27", () => {
     expect(content.includes("Entrer l'identifiant de votre compte github")).toBeFalsy();
   });
 });
